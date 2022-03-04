@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: burlywood;
+    font-family: lato;
+}
+
+.wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: .6rem 3rem;
+    display: flex;
+    flex-direction: column;
+    background: #084596;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.main-img {
+    position: absolute;
+    top: 52%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    z-index: 1;
+}
+
+.main-img .image {
+    width: 100%;
+}
+
+.main-img .image-big {
+    position: absolute;
+    z-index: -1;
+    top: 95%;
+    transform: translate(-50%, -50%);
+    opacity: 80%;
+    width: 400%;
+}
+
+.spacing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-end: 3rem;
+    z-index: 5;
+}
+
+header h1 {
+    width: 70px;
+    font-size: 1.5rem;
+    font-family: caveat;
+    color: rgb(255, 145, 0);
+}
+
+header h1 span {
+    font-size: 1.05rem;
+}
+
+header nav {
+    width: 25%;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+header p:last-child {
+    font-family: caveat;
+    font-size: 1.5rem;
+    color: rgb(255, 145, 0);
+}
+
+section {
+    width: 100%;
+    height: 50vh;
+    z-index: 5;
+}
+
+section main {
+    flex-direction: column;
+}
+
+section main h1 {
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 4.5rem;
+    margin: 1rem 0;
+}
+
+section main p {
+    margin: 0 auto 0 0;
+    font-family: caveat;
+    font-size: 3rem;
+    color: rgb(255, 145, 0);
+}
+
+section main a {
+    text-decoration: none;
+    background: rgb(255, 145, 0);
+    padding: 1px 65px;
+    margin: 20px auto 0 0;
+    color: #fff;
+    font-family: caveat;
+    font-size: 1.5rem;
+}
+
+section .social {
+    flex-direction: column;
+    width: 20px;
+    height: 150px;
+}
+
+footer {
+    width: 100%;
+    height: 5vh;
+    padding: 0 3rem 0 0;
+    z-index: 5;
+}
+
+footer .nums {
+    width: 8%;
+}
+
+footer .nums p:first-of-type {
+    font-family: caveat;
+    font-style: italic;
+    font-size: 2rem;
+    color: rgb(255, 145, 0);
+}
+
+footer .nums p:last-of-type {
+    color: black;
+}
+
+footer .nums .line {
+    width: 55%;
+    height: 1.5px;
+    background: rgb(0, 0, 0);
+}
+
+footer .arrows {
+    position: absolute;
+    top: 10%;
+    left: 48%;
+    width: 10%;
+    justify-content: center;
+}
+
+footer .arrows img {
+    width: 15px;
+}
+
+footer .arrows .block {
+    display: grid;
+    place-content: center;
+    width: 30px;
+    height: 30px;
+    border: .1px solid black;
+}
+
+footer .arrows .back {
+    margin: 10px 0 0 0;
+}
+
+footer .arrows .back img {
+    transform: rotate(180deg);
+}
+
+footer .arrows .next {
+    margin: 0 0 10px 0;
+}
